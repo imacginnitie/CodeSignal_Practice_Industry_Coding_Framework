@@ -81,6 +81,29 @@ Adhering to these guidelines and completing the tasks within the designated time
 
 Best of luck, and remember to frequently test your solutions to track your progress and obtain feedback on your approach 🍀.
 
+## Available Practice Assessments
+
+Each assessment lives in its own directory under `practice_assessments/` and contains:
+- `level1.md` through `level4.md` — Progressive problem specs (each level is cumulative)
+- `simulation.py` — Starter code with a class of stub methods and a dispatcher function
+- `test_simulation.py` — Unit tests for all 4 levels
+
+| Assessment | Domain | Key Concepts |
+| --- | --- | --- |
+| **file_storage** | File hosting service | Upload/get/copy, prefix search, TTL expiration, rollback |
+| **leaderboard** | Gaming leaderboard | Score tracking, rankings with tie-breaking, TTL, historical snapshots |
+| **rate_limiter** | API rate limiting | Request counting, per-endpoint limits, sliding time windows, historical status |
+| **event_scheduler** | Event scheduling | Create/delete events, conflict detection, recurring events, user calendars & free time |
+
+To run tests for any assessment:
+```bash
+cd practice_assessments/<assessment_name>
+python3 -m unittest test_simulation.TestSimulateCodingFramework.test_group_1
+python3 -m unittest test_simulation.TestSimulateCodingFramework.test_group_2
+python3 -m unittest test_simulation.TestSimulateCodingFramework.test_group_3
+python3 -m unittest test_simulation.TestSimulateCodingFramework.test_group_4
+```
+
 ## How to Contribute
 
 Contributing to this guide is a fantastic way to help others prepare for industry coding assessments. If you're interested in adding more questions and challenges, we welcome your contributions! Here's how you can contribute:
@@ -89,7 +112,7 @@ Contributing to this guide is a fantastic way to help others prepare for industr
 
 2. **Create New Questions**: Design your questions to mimic real-world coding assessments. Ensure they are clear, concise, and cover a range of difficulties. Each question should challenge a specific skill or set of skills relevant to coding assessments, such as algorithmic thinking, data structures, or problem-solving under time constraints.
 
-3. **Follow the Existing Structure**: Your questions should be similar in structure (but not content) to the ones found in the `Practice Assessments` directory, specifically the `file_storage` example. This consistency helps candidates familiarize themselves with the format and focus on solving the problems.
+3. **Follow the Existing Structure**: Your questions should be similar in structure (but not content) to the ones found in the `Practice Assessments` directory. See the existing assessments for reference. This consistency helps candidates familiarize themselves with the format and focus on solving the problems.
 
 4. **Adhere to the PDF Guidelines**: The PDF in the repository outlines the rules for how questions should work. Please ensure your questions comply with these rules to maintain the quality and relevance of the assessments.
 
